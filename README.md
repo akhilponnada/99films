@@ -27,4 +27,18 @@ Continue building your app on:
 1. Create and modify your project using [v0.app](https://v0.app)
 2. Deploy your chats from the v0 interface
 3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository# 99films
+4. Vercel deploys the latest version from this repository
+
+## Environment Variables
+
+Create a `.env.local` file in the project root with the following variables (example values):
+
+```
+SMTP_HOST=smtp.hostinger.com
+SMTP_USER=hello@99films.in
+SMTP_PASSWORD=changeme
+SMTP_PORT=587
+SMTP_SECURE=false
+```
+
+Do not commit real credentials. The `.gitignore` is configured to ignore `.env*` files.
